@@ -1,0 +1,10 @@
+[
+    {
+      "type": "Student",
+      "price": 25.99
+    },
+    {
+      "type": "Senior",
+      "price": 9.99
+    }
+]

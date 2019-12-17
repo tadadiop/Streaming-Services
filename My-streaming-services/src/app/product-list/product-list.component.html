@@ -1,0 +1,31 @@
+
+<div *ngFor="let product of products">
+
+        <h3>
+          <a [title]="product.name + ' details'">
+            {{ product.name }}
+          </a>
+        </h3>
+
+<p *ngIf="product.price">
+        Price: {{ product.price }}
+      </p>
+<p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+      
+      <button style="margin-right: 5px;" (click)="signup(product.url)">
+            Sign Up
+          </button>
+        <button (click)="Discount(product.url1)">
+                Discount
+              </button>
+              <button *ngIf="product.isEnable==false" style="margin-left: 5px;" (click)="enable(product.name)">
+                    Enable
+                  </button>
+                  <button *ngIf="product.isEnable==true" style="margin-left: 5px;" (click)="enable(product.name)">
+                        Disable
+                      </button>
+            
+</div>
+
